@@ -12,13 +12,10 @@ int minStartValue(vector<int>& nums) {
             mini = ans[i];
         }
     }
-    int ans;
     if(mini<0){
-        ans = (mini*-1)+1;
-        return ans;
-    }else{
-        return 1;
+        return (mini*-1)+1;;
     }
+    return 1;
 }
 int main(){
     int size;
